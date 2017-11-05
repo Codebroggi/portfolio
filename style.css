@@ -1,0 +1,241 @@
+/*NAVIGATION*/
+
+@media screen and (min-width: 768px) {
+  .navileiste {
+  height: 55px ;
+  animation-name: naviani;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+    }
+}
+@keyframes naviani {
+  from {
+  background: rgba(0,0,0,0.0);
+  }
+  to {
+  background: rgba(0,0,0,1);
+  }
+}
+.navia {
+  color: white !important;
+  opacity: 1;
+}
+.navi-li {
+  padding-right: 40px;
+}
+.navia:hover {
+  color: #C9283E !important;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+}
+.logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*HEADER*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)),
+  url("https://raw.githubusercontent.com/Codebroggi/portfolio/master/img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 75px;
+  justify-content: center;
+  align-items: center;
+}
+#headertext {
+  margin-top: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.headtext {
+  padding: 15px;
+  color: white;
+  border-style: solid;
+}
+.quote {
+  color: white;
+  padding: 65px 45px 65px 45px;
+}
+#arrow {
+  color: #ffffff;
+  padding: 20px;
+}
+#arrow:hover {
+  transform: scale(1.20);
+}
+
+/*CONTENT ABOUT*/
+
+#about {
+  background-color: #AFAFFAF;
+  padding-bottom: 25px;
+  padding-top: 55px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-color: black;
+}
+.skills {
+  list-style-type: none;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+/*CONTENT PORTFOLIO*/
+
+#portfolio {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #EEEEF2;
+  border-bottom-style: solid;
+  border-top: solid grey;
+}
+.portheader {
+  padding-bottom: 20px;
+}
+#portfolbox {
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+.child {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all .8s;
+}
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.65);
+}
+#shadowport:hover .child:before,
+#shadowport:focus .child:before {
+  display: block;
+}
+#shadowport:hover .child {
+  transform: scale(1.1);
+}
+.portlink {
+  display: none;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 60%;
+  text-decoration: none;
+  border: solid white;
+}
+.portlink:hover {
+  text-decoration: none;
+  color: grey;
+  background-color: white;
+}
+#shadowport:hover .portlink,
+#shadowport:focus .portlink {
+  display: block;
+}
+#portfolboxtext {
+  width: 50%;
+  height: 200px;
+  color: black;
+  background-color: white;
+  margin: auto;
+  padding: 10% 10px 20% 30px;
+}
+#portmargin {
+  margin: auto;
+}
+#shadowport {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 25px;
+}
+.bg-one {
+  background-image: url("https://raw.githubusercontent.com/Codebroggi/portfolio/master/img/tribute.png");
+}
+.bg-two {
+  background-image: url("https://raw.githubusercontent.com/Codebroggi/portfolio/master/img/ph.png");
+}
+
+/*CONTENT CONTACT*/
+
+#contact {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)), url("https://raw.githubusercontent.com/Codebroggi/portfolio/master/img/contact.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.kont {
+  max-width: 1140px;
+  width: 70%;
+  margin: 0 auto;
+}
+.form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn-width {
+  width: 100%;
+  background-color: lightgrey;
+  color: black;
+  border-color: black;
+}
+.btn-width:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
+  border-color: black;
+}
+/*FOOTER*/
+
+#footer {
+  padding-top: 8px;
+  background-color: #050505;
+  color: white;
+}
+.footericon {
+  color: white;
+  font-size: 2em;
+  margin: 5px;
+}
+.footericon:hover {
+  color: grey;
+}
+#copyright {
+  font-size: 70%;
+}
