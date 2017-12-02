@@ -76,12 +76,13 @@ header {
 /*CONTENT ABOUT*/
 
 #about {
-  background-color: #AFAFFAF;
-  padding-bottom: 25px;
-  padding-top: 55px;
+  background: linear-gradient(#a3b2cc 20%, #EEEEF2);
+  padding-bottom: 20vh;
+  padding-top: 20vh;
   border-top-style: solid;
   border-top-width: 4px;
   border-color: black;
+  min-height: 60vh;
 }
 .skills {
   list-style-type: none;
@@ -98,6 +99,7 @@ header {
   background-color: #EEEEF2;
   border-bottom-style: solid;
   border-top: solid grey;
+  background: linear-gradient(-180deg, #EEEEF2 10%, lightgrey);
 }
 .portheader {
   padding-bottom: 20px;
@@ -227,6 +229,9 @@ header {
   padding-top: 8px;
   background-color: #050505;
   color: white;
+  border-top: solid;
+  border-color: grey;
+  border-width: 3px;
 }
 .footericon {
   color: white;
